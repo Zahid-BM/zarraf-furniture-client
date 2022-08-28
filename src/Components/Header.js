@@ -33,7 +33,7 @@ const Header = () => {
         }
     }, [state])
     return (
-        <nav ref={navRef} className="bg-gradient bg-blue-300 bg-gradient-to-r sm:from-blue-300 sm:to-blue-100 w-full sticky top-0 z-50">
+        <nav ref={navRef} className="bg-gradient bg-blue-300 bg-gradient-to-r from-blue-400 to-blue-100 w-full sticky top-0 z-50">
             <div className="items-center px-4 max-w-screen-xl mx-auto lg:flex lg:px-8">
                 <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
                     <Link to="/home">
