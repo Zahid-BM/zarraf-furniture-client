@@ -6,12 +6,12 @@ import getAuth from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDVjKgB14ie-pNivLQGnq450aCgd1cPjTM",
-    authDomain: "zarraf-furniture.firebaseapp.com",
-    projectId: "zarraf-furniture",
-    storageBucket: "zarraf-furniture.appspot.com",
-    messagingSenderId: "862762837033",
-    appId: "1:862762837033:web:7fb19e0132101d8d9de838"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
