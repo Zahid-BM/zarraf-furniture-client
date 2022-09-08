@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from '../../../Components/shared/Loading';
 import UseAllFurniture from '../../../hooks/UseAllFurniture';
 import SingleLatestItem from './SingleLatestItem';
 
@@ -13,16 +14,21 @@ const LatestItems = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt, laudantium
                     quia tempore delect
                 </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16 ">
-                {
-                    allFurniture.map(singleFurniture => <SingleLatestItem
-                        key={singleFurniture._id}
-                        latestFurniture={singleFurniture}
 
-                    />)
-                }
             </div>
+            {
+                allFurniture.length ?
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16 ">
+                        {
+
+                            allFurniture.map(singleFurniture => <SingleLatestItem
+                                key={singleFurniture._id}
+                                latestFurniture={singleFurniture}
+
+                            />)
+                        }
+                    </div> : <Loading />
+            }
 
         </div>
     );
