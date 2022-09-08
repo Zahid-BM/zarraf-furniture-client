@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BannerImg from '../../resources/images/banner.jpg'
 
 const Banner2 = () => {
@@ -26,13 +27,15 @@ const Banner2 = () => {
                     </p>
 
                     <div className="mt-8 text-center sm:text-left">
-                        <button className="relative inline-block px-8 py-3 overflow-hidden border border-indigo-600 group focus:outline-none focus:ring" >
-                            <span className="absolute inset-y-0 left-0 w-[5px] transition-all bg-indigo-600 group-hover:w-full group-active:bg-indigo-500"></span>
+                        <Link to={'/allFurniture'}>
+                            <button className="relative inline-block px-8 py-3 overflow-hidden border border-indigo-600 group focus:outline-none focus:ring" >
+                                <span className="absolute inset-y-0 left-0 w-[5px] transition-all bg-indigo-600 group-hover:w-full group-active:bg-indigo-500"></span>
 
-                            <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
-                                See all Furniture
-                            </span>
-                        </button>
+                                <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                    See all Furniture
+                                </span>
+                            </button>
+                        </Link>
 
                     </div>
                 </div>
