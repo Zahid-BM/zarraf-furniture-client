@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsFillCartPlusFill } from "react-icons/bs";
 
 const SingleLatestItem = ({ latestFurniture }) => {
     const { id, picture, name, model, price, warranty, description } = latestFurniture;
@@ -16,7 +17,10 @@ const SingleLatestItem = ({ latestFurniture }) => {
 
                     <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
                         <span class="font-bold text-gray-800 dark:text-gray-200">{price}</span>
-                        <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">Add to cart</button>
+                        <button class="px-2 py-1 text-xs font-semibold text-white uppercase bg-indigo-800 rounded">Details</button>
+                    </div>
+                    <div className=''>
+                        <button class="py-1 text-md font-semibold text-white bg-indigo-800 rounded w-full flex flex-row items-center justify-center uppercase">Buy Now <BsFillCartPlusFill className='ml-3 text-xl' /></button>
                     </div>
                 </div>
             </div>
